@@ -19,12 +19,10 @@ int main(void)
 	{
 		for (j = 48 ; j < 57 ; j++)
 		{
-			for (k = i ; k < 58 ; k++)
+			l = j + 1;
+			k = i;
+			for ( ; k < 58 ; k++)
 			{
-				if (i == 48 && j == 48 && k == 48)
-					l = 49;
-				else
-					l = 48;
 				for ( ; l < 58 ; l++)
 				{
 					putchar(i);
@@ -38,6 +36,7 @@ int main(void)
 						putchar(' ');
 					}
 				}
+				l = 48;
 			}
 		}
 	}
