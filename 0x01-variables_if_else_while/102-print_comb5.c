@@ -21,7 +21,11 @@ int main(void)
 		{
 			for (k = i ; k < 58 ; k++)
 			{
-				for (l = j + 1 ; l < 58 ; l++)
+				if (i == 48 && j == 48 && k == 48)
+					l = 49;
+				else
+					l = 48;
+				for ( ; l < 58 ; l++)
 				{
 					putchar(i);
 					putchar(j);
