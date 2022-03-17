@@ -13,21 +13,20 @@ int main(void)
 
 	i = 612852475143;
 
-	for (i = 1 ; i <= 100 ; i++)
-	{
-		if (i % 15 == 0)
-			printf("FizzBuzz");
-		else if (i % 5 == 0)
-			printf("Buzz");
-		else if (i % 3 == 0)
-			printf("Fizz");
-		else
-			printf("%d", i);
-		if (i != 100)
-			printf(" ");
-	}
-	printf("\n");
+	last = 2;
 
+	while (i >= last * last)
+	{
+		if (i % last == 0)
+		{
+			i = i / last;
+		}
+		else
+		{
+			last = last + 1;
+		}
+	}
+	printf("%lu\n", last);
 	return (0);
 
 }
