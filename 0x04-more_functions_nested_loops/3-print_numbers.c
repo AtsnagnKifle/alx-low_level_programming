@@ -1,18 +1,21 @@
 #include "main.h"
+#include<stdlib.h>
+#include<time.h>
+#include<stdio.h>
 
 /**
- * _isdigit - check the given character is a digit or not
+ * print_numbers - print numbers from 0 to 9
  *
- * Return: 1 if c is digit otherwise 0
- * @c: parameter 1
  */
 
-int _isdigit(int c)
+void print_numbers()
 {
+	int c;
 
-	if (c >= 48 && c <= 57)
+	for (c = 48 ; c <= 57 ; c++)
 	{
-		return (1);
+		putchar(c);
 	}
-	return (0);
+	putchar('\n');
+
 }
