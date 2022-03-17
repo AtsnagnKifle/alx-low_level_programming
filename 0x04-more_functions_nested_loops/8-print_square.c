@@ -4,21 +4,20 @@
 #include<stdio.h>
 
 /**
- * print_diagonal - print diagonal line
+ * print_square - print a square
  *
  *@n: parameter 1
  */
 
-void print_diagonal(int n)
+void print_square(int n)
 {
 	int i;
 	int j;
 
 	for (i = 0 ; i < n ; i++)
 	{
-		for (j = 0 ; j < i ; j++)
-			putchar(' ');
-		putchar('\\');
+		for (j = 0 ; j < n ; j++)
+			putchar('#');
 		if (i != (n - 1))
 			putchar('\n');
 	}
