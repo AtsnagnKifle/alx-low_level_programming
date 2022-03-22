@@ -12,6 +12,7 @@ void puts_half(char *s)
 {
 	int len;
 	int i;
+	int j;
 
 	len = strlen(s);
 	if (len % 2 == 0)
@@ -19,9 +20,9 @@ void puts_half(char *s)
 	else
 		i = (len - 1) / 2;
 
-	for ( ; i < len ; i++)
+	for (j = (len - i - 1) ; j < len ; j++)
 	{
-		_putchar(s[i]);
+		_putchar(s[j]);
 	}
 	_putchar('\n');
 
