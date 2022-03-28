@@ -27,6 +27,6 @@ char *_strchr(char *s, char c)
 	if (bo)
 		return (s);
 
-	return (NULL);
+	return (0);
 
 }
