@@ -1,5 +1,6 @@
 #include "main.h"
 #include<string.h>
+#include<stdio.h>
 
 /**
  * print_diagsums - print sum of diagonals
@@ -11,19 +12,19 @@
 void print_diagsums(int *a, int size)
 {
 	int i;
-	int j;
-	int ltor;
+	int first_sum;
+	int second_sum;
+
+	first_sum = 0;
+	second_sum = 0;
 
 	for (i = 0 ; i < size ; i++)
 	{
-		for (j = 0 ; j < size ; j++)
-		{
-			if (i == j)
-			{
-				ltor = ltor + a[i][j];
-			}
-		}
+		first_sum += *(a + ((size * i) + i));
 	}
-
-	_putchar(ltor);
+	for (i = 1 ; i <= size ; i++)
+	{
+		second_sum += *(a + ((size * i) - i));
+	}
+	printf("%d, %d\n", first_sum, second_sum);
 }
