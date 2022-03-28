@@ -1,5 +1,6 @@
 #include "main.h"
 #include<stddef.h>
+#include<string.h>
 
 /**
  * *_strchr - find the first occurence of a char c in the char of array
@@ -12,15 +13,5 @@
 
 char *_strchr(char *s, char c)
 {
-
-	while (*s != '\0')
-	{
-		if (*s == c)
-		{
-			return (s);
-		}
-		s++;
-	}
-	return (0);
-
+	return strchr(s,c);
 }
