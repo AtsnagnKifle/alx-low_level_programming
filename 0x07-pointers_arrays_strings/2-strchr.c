@@ -12,21 +12,15 @@
 
 char *_strchr(char *s, char c)
 {
-	int bo;
 
 	while (*s != '\0')
 	{
 		if (*s == c)
 		{
-			bo = 1;
-			break;
+			return (s);
 		}
 		s++;
 	}
-
-	if (bo)
-		return (s);
-
 	return (0);
 
 }
