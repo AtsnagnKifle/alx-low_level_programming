@@ -3,7 +3,7 @@
 #include<string.h>
 
 /**
- * is_palindrome - return 1 if the given string is palindrome otherwise return 0
+ * is_palindrome - return 1 if the string is palindrome otherwise return 0
  *
  *Return: 1 if the given strging is palindrome otherwise return 0
  *@s: the given string
