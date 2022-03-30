@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * factorial - using recursion return factorial of the given number
+ * _pow_recursion - using recursion return x pow y
  *
- *Return: return factorial of the given number
- *@n: the given number
+ *Return: return x pow y
+ *@x: number 1
+ *@y: number 2
  */
 
 int _pow_recursion(int x, int y)
