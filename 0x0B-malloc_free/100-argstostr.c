@@ -7,6 +7,7 @@
  * Return: NULL if ac == 0 or av == NULL else
  * pointer to a string of NULL if it fails.
  */
+
 char *argstostr(int ac, char **av)
 {
 	int i, j, k, length;
@@ -29,7 +30,7 @@ char *argstostr(int ac, char **av)
 		length++;
 		i++;
 	}
-	str = malloc((sizeof(char) + length) + 1);
+	str = malloc((sizeof(char) + length));
 	if (str == NULL)
 		return (NULL);
 	i = 0;
