@@ -7,9 +7,9 @@
   * assumes that the array is sorted in asc order
   * also assumes that value won't appear twice in the array
   * prints the array being searched every time it changes.
-  * array: pointer to the first element of the array to search in
-  * size: number of elements in array
-  * value: value to search for
+  * @array: pointer to the first element of the array to search in
+  * @size: number of elements in array
+  * @value: value to search for
   * Return: return index of value, if value is not present in array or
   * if array is NULL, returns -1
   */
